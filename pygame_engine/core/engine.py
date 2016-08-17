@@ -3,16 +3,23 @@ import logging
 import pygame
 import sys
 
-from lib.event.signal import Signal
+import environment
+environment.setup()
+
+from pygame_engine.lib import logging_config
+from pygame_engine.lib.config import EngineConfiguration
+from pygame_engine.lib.event.signal import Signal
 
 
-logger = logging.getLogger('root.engine')
+logging_config.setup()
+logger = logging.getLogger('root.core.engine')
 clock = pygame.time.Clock()
 
 
 @attr.s
 class Engine(object):
     fps = attr.ib(default=60)
+    configuration = attr.ib(init=False, default=EngineConfiguration(), repr=False)
     _event_signals = attr.ib(init=False, default=attr.Factory(dict), repr=False)
 
     def register_callback(self, event_type, callback):
@@ -25,6 +32,9 @@ class Engine(object):
         pygame.init()
 
         self.register_callback(pygame.QUIT, self.quit)
+
+        if 'startup' in self._event_signals:
+            self._event_signals['startup'].emit()
 
         while True:
             elapsed_time = clock.tick(self.fps) / 1000.0

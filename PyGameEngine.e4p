@@ -11,12 +11,19 @@
   <Version>0.1</Version>
   <Author>Ian Davis</Author>
   <Email></Email>
+  <Eol index="-1"/>
   <Sources>
     <Source>pygame_engine/core/engine.py</Source>
     <Source>pygame_engine/core/__init__.py</Source>
     <Source>pygame_engine/lib/__init__.py</Source>
     <Source>pygame_engine/__init__.py</Source>
     <Source>__init__.py</Source>
+    <Source>pygame_engine/lib/event/signal.py</Source>
+    <Source>pygame_engine/lib/event/slot.py</Source>
+    <Source>pygame_engine/lib/event/__init__.py</Source>
+    <Source>pygame_engine/core/environment.py</Source>
+    <Source>pygame_engine/lib/config.py</Source>
+    <Source>pygame_engine/lib/logging_config.py</Source>
   </Sources>
   <Forms/>
   <Translations/>
