@@ -1,4 +1,4 @@
-from python_utils import os_util
+from python_utilities import os_util
 
 
 def project_root():
@@ -7,4 +7,3 @@ def project_root():
 
 def setup():
     os_util.add_python_path(project_root())
-

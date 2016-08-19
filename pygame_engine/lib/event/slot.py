@@ -10,5 +10,7 @@ class Slot(object):
     callback = attr.ib()
 
     def call(self, args, kwargs):
-        logger.debug('Invoking {0}\n    arguments: {1}\n    keyword-arguments: {2}'.format(self.callback, args, kwargs))
-        self.callback(args, kwargs)
+        self.callback(*args, **kwargs)
+
+    def __str__(self):
+        return '{0}({1})'.format(self.__class__.__name__, self.callback.__name__)
