@@ -4,6 +4,10 @@ from pygame_engine.lib.data.size import Size
 
 
 def startup():
+    """ Event handler called when the PyGameEngine starts up.
+
+        Used to create a display and test any dynamic runtime functionality.
+    """
     display = Display(Size(640, 480))
 
 

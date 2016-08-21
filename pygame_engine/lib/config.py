@@ -7,6 +7,11 @@ from pygame_engine.core import environment
 
 
 def logging_default_section(logger_name):
+    """ Create a new OrderedDictionary representing a configuration section for a logger with the given name.
+
+        :param logger_name: The name of the logger to create a configuration section for.
+        :return: An OrdereDictionary of the configuration section created.
+    """
     default_filepath = os_util.make_path(environment.project_root(), 'logs',
                                          '{0}.txt'.format(logger_name.replace('.', '-')))
 
@@ -27,6 +32,8 @@ def logging_default_section(logger_name):
 
 
 class EngineConfiguration(Configuration):
+    """ Represent the Configuration manager for the PyGameEngine.
+    """
     def __init__(self):
         default_sections = OrderedDictionary()
         default_sections['root.core.engine.logger'] = logging_default_section('root.core.engine')

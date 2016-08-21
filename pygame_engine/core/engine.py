@@ -12,9 +12,11 @@ clock = pygame.time.Clock()
 
 
 class Engine(object):
+    # TODO: Basic Documentation.
     _fps = 60
     _event_signals = {}
     _instance = None
+    _event_loop_running = False
 
     def __init__(self, fps=60):
         self._fps = fps
@@ -31,6 +33,10 @@ class Engine(object):
         self._event_signals[event_type].connect(callback)
 
     def run(self):
+        if Engine._event_loop_running:
+            raise RuntimeError("The engine's event loop is already running!")
+
+        Engine._event_loop_running = True
         logger.debug('initializing engine')
 
         pygame.init()
