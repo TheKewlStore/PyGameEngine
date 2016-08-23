@@ -1,3 +1,8 @@
 <component name="ProjectDictionaryState">
-  <dictionary name="kewlstore" />
+  <dictionary name="kewlstore">
+    <words>
+      <w>filepath</w>
+      <w>pygame</w>
+    </words>
+  </dictionary>
 </component>

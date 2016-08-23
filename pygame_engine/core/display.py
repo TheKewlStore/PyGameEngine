@@ -5,7 +5,7 @@
 import pygame
 
 from pygame_engine.core.engine import Engine
-from pygame_engine.lib.gui.widget import PGERootWidget
+from pygame_engine.gui.widget import PGERootWidget
 
 
 class Display(object):

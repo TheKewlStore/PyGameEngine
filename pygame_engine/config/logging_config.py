@@ -1,7 +1,7 @@
 from python_utilities import log_util
 from python_utilities import os_util
 
-from pygame_engine.lib.config import EngineConfiguration
+from pygame_engine.config.config import EngineConfiguration
 
 
 configuration = EngineConfiguration()
@@ -9,15 +9,15 @@ configuration = EngineConfiguration()
 
 def setup():
     setup_core()
-    setup_lib()
+    setup_event()
 
 
 def setup_core():
     initialize_logger_from_config('root.core.engine')
 
 
-def setup_lib():
-    initialize_logger_from_config('root.lib.event')
+def setup_event():
+    initialize_logger_from_config('root.event')
 
 
 def initialize_logger_from_config(logger_name):

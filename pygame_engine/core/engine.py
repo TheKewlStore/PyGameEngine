@@ -3,12 +3,12 @@
     Author: Ian Davis
 """
 import logging
-import pygame
 import sys
 
-from pygame_engine.lib import logging_config
-from pygame_engine.lib.event.signal import Signal
+import pygame
 
+from pygame_engine.event import Signal
+from pygame_engine.config import logging_config
 
 logging_config.setup()
 logger = logging.getLogger('root.core.engine')

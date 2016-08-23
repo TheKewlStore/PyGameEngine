@@ -3,8 +3,7 @@ import logging
 
 from slot import Slot
 
-
-logger = logging.getLogger('root.lib.event')
+logger = logging.getLogger('root.event')
 
 
 @attr.s

@@ -1,8 +1,7 @@
 import attr
 import logging
 
-
-logger = logging.getLogger('root.lib.event')
+logger = logging.getLogger('root.event')
 
 
 @attr.s
