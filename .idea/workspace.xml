@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0431c87d-e362-4eef-ac04-7326fe575832" name="Default" comment="Fixed painting to include the pygame.display.flip() necessary to show all changes to the screen after a paint.&#10;&#10;Updated .gitignore">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/PyGameEngine.iml" afterPath="$PROJECT_DIR$/.idea/PyGameEngine.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="0431c87d-e362-4eef-ac04-7326fe575832" name="Default" comment="Added layout wide surface updating (when size recalculations are made), as well as layout wide paint event handling.&#10;&#10;Added Label widget, which is used to display text to the screen in a simple format.&#10;">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/root-lib-event.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/engine.ini" afterPath="$PROJECT_DIR$/engine.ini" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/root-core-engine.txt" afterPath="$PROJECT_DIR$/logs/root-core-engine.txt" />
     </list>
     <ignored path="PyGameEngine.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
-    <ignored mask="*.txt" />
-    <ignored mask="*.1" />
-    <ignored mask="*.txt.*" />
-    <ignored mask="*.2" />
     <ignored path="engine.ini" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,12 +18,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" show_ignored="true" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/PyGameEngine$test_engine.coverage" NAME="test_engine Coverage Results" MODIFIED="1471919418618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/PyGameEngine$engine.coverage" NAME="engine Coverage Results" MODIFIED="1471551349546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pygame_engine/core" />
+    <SUITE FILE_PATH="coverage/PyGameEngine$test_engine.coverage" NAME="test_engine Coverage Results" MODIFIED="1471999587774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
   </component>
   <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="" />
+    <option name="PATCH_PATH" value="C:\home\projects\PyGameEngine" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -37,28 +35,12 @@
       <file leaf-file-name="test_engine.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/test_engine.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="136">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding>
-                <element signature="e#0#44#0" expanded="true" />
-                <element signature="e#297#325#0" expanded="true" />
-                <element signature="e#347#598#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="display.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pygame_engine/core/display.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding>
-                <element signature="e#102#115#0" expanded="true" />
-                <element signature="e#368#789#0" expanded="true" />
-                <element signature="e#840#864#0" expanded="true" />
-                <element signature="e#937#1186#0" expanded="true" />
-                <element signature="e#1217#1433#0" expanded="true" />
+                <element signature="e#0#36#0" expanded="true" />
+                <element signature="e#328#398#0" expanded="true" />
+                <element signature="e#420#776#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -91,19 +73,28 @@
         <option value="$PROJECT_DIR$/../PythonUtilities/python_utilities/log_util.py" />
         <option value="$PROJECT_DIR$/pygame_engine/lib/event/slot.py" />
         <option value="$PROJECT_DIR$/pygame_engine/lib/event/signal.py" />
-        <option value="$PROJECT_DIR$/engine.ini" />
-        <option value="$PROJECT_DIR$/pygame_engine/lib/logging_config.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/pygame_engine/lib/gui/pge_widget.py" />
         <option value="$PROJECT_DIR$/pygame_engine/core/environment.py" />
-        <option value="$PROJECT_DIR$/pygame_engine/core/engine.py" />
-        <option value="$PROJECT_DIR$/pygame_engine/lib/config.py" />
         <option value="$PROJECT_DIR$/pygame_engine/lib/data/point.py" />
-        <option value="$PROJECT_DIR$/pygame_engine/lib/gui/layout.py" />
         <option value="$PROJECT_DIR$/pygame_engine/lib/data/style.py" />
+        <option value="$PROJECT_DIR$/pygame_engine/lib/gui/widget.py" />
+        <option value="$PROJECT_DIR$/pygame_engine/lib/gui/label.py" />
+        <option value="$PROJECT_DIR$/pygame_engine/lib/gui/layout.py" />
+        <option value="$PROJECT_DIR$/pygame_engine/event/signal.py" />
+        <option value="$PROJECT_DIR$/pygame_engine/event/slot.py" />
+        <option value="$PROJECT_DIR$/pygame_engine/lib/logging_config.py" />
+        <option value="$PROJECT_DIR$/pygame_engine/lib/config.py" />
+        <option value="$PROJECT_DIR$/pygame_engine/event/__init__.py" />
+        <option value="$PROJECT_DIR$/pygame_engine/core/engine.py" />
+        <option value="$PROJECT_DIR$/pygame_engine/data/__init__.py" />
+        <option value="$PROJECT_DIR$/pygame_engine/gui/widget.py" />
+        <option value="$PROJECT_DIR$/pygame_engine/gui/label.py" />
+        <option value="$PROJECT_DIR$/pygame_engine/gui/layout.py" />
         <option value="$PROJECT_DIR$/pygame_engine/core/display.py" />
         <option value="$PROJECT_DIR$/tests/test_engine.py" />
-        <option value="$PROJECT_DIR$/pygame_engine/lib/gui/widget.py" />
+        <option value="$PROJECT_DIR$/logs/root-core-engine.txt" />
+        <option value="$PROJECT_DIR$/engine.ini" />
       </list>
     </option>
   </component>
@@ -114,10 +105,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="54" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1554" />
-    <option name="height" value="1216" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -160,6 +151,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane />
+      </pane>
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Problems" />
         <subPane subId="Project Files">
@@ -168,44 +163,6 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="External Dependencies">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="C:">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Users">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="davisix">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT=".PyCharm2016.2">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="system">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="python_stubs">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="-762174762">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="PyGameEngine">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
@@ -238,24 +195,39 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="lib">
+            <PATH_ELEMENT USER_OBJECT="gui">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="PyGameEngine">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="logs">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane />
-      </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\home\projects\PyGameEngine\pygame_engine" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.test_engine">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -513,10 +485,38 @@
       <option name="project" value="LOCAL" />
       <updated>1471897497080</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fixed painting to include the pygame.display.flip() necessary to show all changes to the screen after a paint.&#10;&#10;Updated .gitignore">
+      <created>1471919887845</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1471919887845</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Restructured lib package into separate top level packages.&#10;&#10;Added gui package to VCS">
+      <created>1471995373697</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1471995373697</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Commiting workspace changes">
+      <created>1471995403493</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1471995403493</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added layout wide surface updating (when size recalculations are made), as well as layout wide paint event handling.&#10;&#10;Added Label widget, which is used to display text to the screen in a simple format.&#10;">
+      <created>1471999530433</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1471999530433</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
-  <component name="TodoView">
+  <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -525,27 +525,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1554" height="1216" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19076306" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27490774" sideWeight="0.5066934" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32286024" sideWeight="0.5042644" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31527627" sideWeight="0.49573562" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36836404" sideWeight="0.4978678" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3336945" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14978679" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27490774" sideWeight="0.49330655" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36836404" sideWeight="0.4978678" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39869988" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3336945" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39869988" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -566,76 +567,40 @@
     <MESSAGE value="Added basic documentation for display module.&#10;&#10;Added basic documentation for engine module, and changed log messages from debug level to info level.&#10;&#10;Added basic documentation for environment module." />
     <MESSAGE value="Start of implementation for PGEWidget and Layouts." />
     <MESSAGE value="Fixed painting to include the pygame.display.flip() necessary to show all changes to the screen after a paint.&#10;&#10;Updated .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed painting to include the pygame.display.flip() necessary to show all changes to the screen after a paint.&#10;&#10;Updated .gitignore" />
+    <MESSAGE value="Restructured lib package into separate top level packages.&#10;&#10;Added gui package to VCS" />
+    <MESSAGE value="Commiting workspace changes" />
+    <MESSAGE value="Added layout wide surface updating (when size recalculations are made), as well as layout wide paint event handling.&#10;&#10;Added Label widget, which is used to display text to the screen in a simple format.&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added layout wide surface updating (when size recalculations are made), as well as layout wide paint event handling.&#10;&#10;Added Label widget, which is used to display text to the screen in a simple format.&#10;" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="24" />
+      <option name="time" value="45" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pygame_engine/core/display.py">
+    <entry file="file://$PROJECT_DIR$/pygame_engine/gui/widget.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="204">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
-            <element signature="e#102#115#0" expanded="true" />
-            <element signature="e#368#789#0" expanded="true" />
-            <element signature="e#840#864#0" expanded="true" />
-            <element signature="e#937#1186#0" expanded="true" />
-            <element signature="e#1217#1433#0" expanded="true" />
+            <element signature="e#342#418#0" expanded="true" />
+            <element signature="e#462#657#0" expanded="true" />
+            <element signature="e#688#743#0" expanded="true" />
+            <element signature="e#830#967#0" expanded="true" />
+            <element signature="e#1011#1070#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pygame_engine/core/engine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="e#112#126#0" expanded="false" />
-            <element signature="e#1825#2962#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_engine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-            <element signature="e#297#325#0" expanded="true" />
-            <element signature="e#347#598#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pygame_engine/lib/gui/layout.py" />
-    <entry file="file://$PROJECT_DIR$/pygame_engine/core/display.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
-          <folding>
-            <element signature="e#102#115#0" expanded="true" />
-            <element signature="e#368#789#0" expanded="true" />
-            <element signature="e#840#864#0" expanded="true" />
-            <element signature="e#937#1186#0" expanded="true" />
-            <element signature="e#1217#1433#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pygame_engine/lib/gui/widget.py" />
     <entry file="file://$PROJECT_DIR$/pygame_engine/core/engine.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <element signature="e#112#126#0" expanded="false" />
-            <element signature="e#1825#2962#0" expanded="false" />
+            <element signature="e#112#126#0" expanded="true" />
+            <element signature="e#1817#2954#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -645,9 +610,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="44" selection-start-line="0" selection-start-column="44" selection-end-line="0" selection-end-column="44" />
           <folding>
-            <element signature="e#0#44#0" expanded="true" />
-            <element signature="e#297#325#0" expanded="true" />
-            <element signature="e#347#598#0" expanded="true" />
+            <element signature="e#0#36#0" expanded="true" />
+            <element signature="e#328#398#0" expanded="true" />
+            <element signature="e#420#776#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -657,23 +622,32 @@
         <state relative-caret-position="17">
           <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
           <folding>
-            <element signature="e#102#115#0" expanded="true" />
-            <element signature="e#368#789#0" expanded="true" />
-            <element signature="e#840#864#0" expanded="true" />
-            <element signature="e#937#1186#0" expanded="true" />
-            <element signature="e#1217#1433#0" expanded="true" />
+            <element signature="e#102#115#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pygame_engine/lib/gui/widget.py" />
+    <entry file="file://$PROJECT_DIR$/pygame_engine/gui/widget.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#342#418#0" expanded="true" />
+            <element signature="e#462#657#0" expanded="true" />
+            <element signature="e#688#743#0" expanded="true" />
+            <element signature="e#830#967#0" expanded="true" />
+            <element signature="e#1011#1070#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pygame_engine/core/engine.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <element signature="e#112#126#0" expanded="false" />
-            <element signature="e#1825#2962#0" expanded="false" />
+            <element signature="e#112#126#0" expanded="true" />
+            <element signature="e#1817#2954#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -683,9 +657,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="44" selection-start-line="0" selection-start-column="44" selection-end-line="0" selection-end-column="44" />
           <folding>
-            <element signature="e#0#44#0" expanded="true" />
-            <element signature="e#297#325#0" expanded="true" />
-            <element signature="e#347#598#0" expanded="true" />
+            <element signature="e#0#36#0" expanded="true" />
+            <element signature="e#328#398#0" expanded="true" />
+            <element signature="e#420#776#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -695,23 +669,32 @@
         <state relative-caret-position="85">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
-            <element signature="e#102#115#0" expanded="true" />
-            <element signature="e#368#789#0" expanded="true" />
-            <element signature="e#840#864#0" expanded="true" />
-            <element signature="e#937#1186#0" expanded="true" />
-            <element signature="e#1217#1433#0" expanded="true" />
+            <element signature="e#102#115#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pygame_engine/lib/gui/widget.py" />
+    <entry file="file://$PROJECT_DIR$/pygame_engine/gui/widget.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#342#418#0" expanded="true" />
+            <element signature="e#462#657#0" expanded="true" />
+            <element signature="e#688#743#0" expanded="true" />
+            <element signature="e#830#967#0" expanded="true" />
+            <element signature="e#1011#1070#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pygame_engine/core/engine.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <element signature="e#112#126#0" expanded="false" />
-            <element signature="e#1825#2962#0" expanded="false" />
+            <element signature="e#112#126#0" expanded="true" />
+            <element signature="e#1817#2954#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -721,11 +704,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#102#115#0" expanded="true" />
-            <element signature="e#368#789#0" expanded="true" />
-            <element signature="e#840#864#0" expanded="true" />
-            <element signature="e#937#1186#0" expanded="true" />
-            <element signature="e#1217#1433#0" expanded="true" />
+            <element signature="e#102#115#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -735,8 +714,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#112#126#0" expanded="false" />
-            <element signature="e#1825#2962#0" expanded="false" />
+            <element signature="e#112#126#0" expanded="true" />
+            <element signature="e#1817#2954#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -746,9 +725,9 @@
         <state relative-caret-position="68">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <element signature="e#0#44#0" expanded="true" />
-            <element signature="e#297#325#0" expanded="true" />
-            <element signature="e#347#598#0" expanded="true" />
+            <element signature="e#0#36#0" expanded="true" />
+            <element signature="e#328#398#0" expanded="true" />
+            <element signature="e#420#776#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -758,8 +737,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#112#126#0" expanded="false" />
-            <element signature="e#1825#2962#0" expanded="false" />
+            <element signature="e#112#126#0" expanded="true" />
+            <element signature="e#1817#2954#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -769,9 +748,9 @@
         <state relative-caret-position="68">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <element signature="e#0#44#0" expanded="true" />
-            <element signature="e#297#325#0" expanded="true" />
-            <element signature="e#347#598#0" expanded="true" />
+            <element signature="e#0#36#0" expanded="true" />
+            <element signature="e#328#398#0" expanded="true" />
+            <element signature="e#420#776#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -781,8 +760,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#112#126#0" expanded="false" />
-            <element signature="e#1825#2962#0" expanded="false" />
+            <element signature="e#112#126#0" expanded="true" />
+            <element signature="e#1817#2954#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -792,9 +771,9 @@
         <state relative-caret-position="85">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <element signature="e#0#44#0" expanded="true" />
-            <element signature="e#297#325#0" expanded="true" />
-            <element signature="e#347#598#0" expanded="true" />
+            <element signature="e#0#36#0" expanded="true" />
+            <element signature="e#328#398#0" expanded="true" />
+            <element signature="e#420#776#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -804,8 +783,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#112#126#0" expanded="false" />
-            <element signature="e#1825#2962#0" expanded="false" />
+            <element signature="e#112#126#0" expanded="true" />
+            <element signature="e#1817#2954#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -815,9 +794,9 @@
         <state relative-caret-position="187">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
-            <element signature="e#0#44#0" expanded="true" />
-            <element signature="e#297#325#0" expanded="true" />
-            <element signature="e#347#598#0" expanded="true" />
+            <element signature="e#0#36#0" expanded="true" />
+            <element signature="e#328#398#0" expanded="true" />
+            <element signature="e#420#776#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -827,8 +806,8 @@
         <state relative-caret-position="323">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
-            <element signature="e#112#126#0" expanded="false" />
-            <element signature="e#1825#2962#0" expanded="false" />
+            <element signature="e#112#126#0" expanded="true" />
+            <element signature="e#1817#2954#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -845,20 +824,26 @@
         <state relative-caret-position="204">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
-            <element signature="e#112#126#0" expanded="false" />
-            <element signature="e#1825#2962#0" expanded="false" />
+            <element signature="e#112#126#0" expanded="true" />
+            <element signature="e#1817#2954#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pygame_engine/lib/config.py">
+    <entry file="file://$PROJECT_DIR$/pygame_engine/config/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/python-skeletons/pygame/__init__.py" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/python-skeletons/pygame/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://C:/Python27/Lib/site-packages/pygame/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
@@ -866,12 +851,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/python_utilities/log_util.py" />
-    <entry file="file://$PROJECT_DIR$/../PythonUtilities/python_utilities/log_util.py" />
-    <entry file="file://$PROJECT_DIR$/engine.ini">
+    <entry file="file://C:/Python27/Lib/site-packages/python_utilities/log_util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="665">
+          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../PythonUtilities/python_utilities/log_util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -879,44 +869,48 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="606">
           <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pygame_engine/lib/logging_config.py">
+    <entry file="file://$PROJECT_DIR$/pygame_engine/gui/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pygame_engine/lib/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pygame_engine/lib/gui/__init__.py" />
     <entry file="file://$PROJECT_DIR$/pygame_engine/core/environment.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pygame_engine/lib/data/size.py">
+    <entry file="file://$PROJECT_DIR$/pygame_engine/data/size.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pygame_engine/lib/data/point.py" />
+    <entry file="file://$PROJECT_DIR$/pygame_engine/data/point.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pygame_engine/lib/data/style.py" />
-    <entry file="file://$PROJECT_DIR$/logs/root-core-engine.txt">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -924,65 +918,177 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pygame_engine/lib/event/slot.py">
+    <entry file="file://$PROJECT_DIR$/pygame_engine/config/logging_config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pygame_engine/lib/event/signal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pygame_engine/core/engine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="136">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
-            <element signature="e#112#126#0" expanded="false" />
-            <element signature="e#1825#2962#0" expanded="false" />
+            <element signature="e#0#37#0" expanded="false" />
+            <element signature="e#195#225#0" expanded="false" />
+            <element signature="e#250#299#0" expanded="false" />
+            <element signature="e#325#368#0" expanded="false" />
+            <element signature="e#423#1915#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pygame_engine/lib/gui/layout.py" />
-    <entry file="file://$PROJECT_DIR$/pygame_engine/lib/data/color.py">
+    <entry file="file://$PROJECT_DIR$/pygame_engine/event/slot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="102">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="false" />
+            <element signature="e#167#197#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pygame_engine/event/signal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pygame_engine/event/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#20#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pygame_engine/data/color.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#220#266#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pygame_engine/data/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pygame_engine/config/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+            <element signature="e#1254#1654#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pygame_engine/core/display.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="408">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
-            <element signature="e#102#115#0" expanded="true" />
-            <element signature="e#368#789#0" expanded="true" />
-            <element signature="e#840#864#0" expanded="true" />
-            <element signature="e#937#1186#0" expanded="true" />
-            <element signature="e#1217#1433#0" expanded="true" />
+            <element signature="e#364#785#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pygame_engine/lib/gui/widget.py" />
+    <entry file="file://$PROJECT_DIR$/pygame_engine/core/engine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <element signature="e#112#126#0" expanded="true" />
+            <element signature="e#1817#2954#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/root-core-engine.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/root-event.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="344" column="0" selection-start-line="344" selection-start-column="0" selection-end-line="344" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pygame_engine/gui/label.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#49#62#0" expanded="true" />
+            <element signature="e#310#495#0" expanded="true" />
+            <element signature="e#526#601#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pygame_engine/gui/widget.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#146#159#0" expanded="true" />
+            <element signature="e#342#418#0" expanded="true" />
+            <element signature="e#462#657#0" expanded="true" />
+            <element signature="e#688#743#0" expanded="true" />
+            <element signature="e#830#967#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pygame_engine/gui/layout.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+          <folding>
+            <element signature="e#49#60#0" expanded="true" />
+            <element signature="e#413#729#0" expanded="true" />
+            <element signature="e#2579#2926#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_engine.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="136">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
-            <element signature="e#0#44#0" expanded="true" />
-            <element signature="e#297#325#0" expanded="true" />
-            <element signature="e#347#598#0" expanded="true" />
+            <element signature="e#0#36#0" expanded="true" />
+            <element signature="e#328#398#0" expanded="true" />
+            <element signature="e#420#776#0" expanded="true" />
           </folding>
         </state>
       </provider>
