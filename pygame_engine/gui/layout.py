@@ -14,7 +14,8 @@ class Layout(object):
     name = attr.ib()
     width = attr.ib()
     height = attr.ib()
-    _widgets = attr.ib(default=[], init=False, repr=False)
+    parent = attr.ib()
+    widgets = attr.ib(default=[], init=False, repr=False)
 
     def add_widget(self, widget):
         """ Add the given widget to the end of the layout.
@@ -22,7 +23,10 @@ class Layout(object):
             :param widget: The widget to add.
             :return: None
         """
+        widget.surface = self.parent.surface.subsurface(widget.rect)
         self.widgets.append(widget)
+        self._redistribute_widgets()
+        self._update_widget_surfaces()
 
     def get_origin(self, widget):
         """ Calculate the origin for a given widget in the layout.
@@ -33,21 +37,30 @@ class Layout(object):
         """
         raise NotImplementedError('get_rect must be implemented by subclasses')
 
+    def paint_widgets(self):
+        for widget in self.widgets:
+            widget.paint()
+
+    def _redistribute_widgets(self):
+        """ Redistribute the width and height of all widgets in the layout to properly fit the layout size.
+
+            :return: None
+        """
+        raise NotImplementedError('Abstract method')
+
+    def _update_widget_surfaces(self):
+        """ Called after a new widget is added to the layout, this method updates the surface rects for all widgets to reflect any size changes that occurred.
+
+            :return: None
+        """
+        for widget in self.widgets:
+            widget.surface = self.parent.surface.subsurface(widget.rect)
+
 
 @attr.s
 class VerticalLayout(Layout):
     """ Represent a layout of widgets spaced vertically across the parent widget.
     """
-
-    def add_widget(self, widget):
-        """ Add the given widget to the end of the layout and recalculate all widget's sizes to fit in the layout.
-
-            :param widget: The widget to add.
-            :return: None
-        """
-        self.widgets.append(widget)
-        self._redistribute_widgets()
-
     def get_origin(self, widget):
         """ Calculate the origin for a given widget in the layout.
 
@@ -75,7 +88,7 @@ class VerticalLayout(Layout):
         widget_width = self.width
         widget_height = self.height / len(self.widgets)
 
-        for widget in self._widgets:
+        for widget in self.widgets:
             widget.width = widget_width
             widget.height = widget_height
 
@@ -84,16 +97,6 @@ class VerticalLayout(Layout):
 class HorizontalLayout(Layout):
     """ Represent a layout of widgets spaced horizontally across the parent widget.
     """
-
-    def add_widget(self, widget):
-        """ Add the given widget to the end of the layout and recalculate all widget's sizes to fit in the layout.
-
-            :param widget: The widget to add.
-            :return: None
-        """
-        self._widgets.append(widget)
-        self._redistribute_widgets()
-
     def get_origin(self, widget):
         """ Calculate the origin for a given widget in the layout.
 

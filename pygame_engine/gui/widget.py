@@ -25,14 +25,15 @@ class PGEWidget(object):
         return pygame.Rect(origin.x, origin.y, self.size.width, self.size.height)
 
     def paint(self):
-        pass
+        if self.layout:
+            self.layout.paint_widgets()
 
 
 class PGERootWidget(PGEWidget):
     def __init__(self, size, surface=None):
         super(PGERootWidget, self).__init__(size, surface)
 
-        self.layout = VerticalLayout('root', self.size.width, self.size.height)
+        self.layout = VerticalLayout('root', self.size.width, self.size.height, self)
 
     @property
     def rect(self):
