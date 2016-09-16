@@ -3,4 +3,13 @@
 <!-- eric6 tasks file for project PyGameEngine -->
 <Tasks version="5.1">
   <ProjectScanFilter></ProjectScanFilter>
+  <Task priority="1" completed="False" type="1">
+    <Summary>TODO: Setup basic widgets such as buttons and labels.</Summary>
+    <Description></Description>
+    <Created>2016-08-24, 14:52:03</Created>
+    <Resource>
+      <Filename>pygame_engine/gui/widget.py</Filename>
+      <Linenumber>5</Linenumber>
+    </Resource>
+  </Task>
 </Tasks>

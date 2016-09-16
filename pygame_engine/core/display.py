@@ -5,7 +5,6 @@
 import pygame
 
 from pygame_engine.core.engine import Engine
-from pygame_engine.gui.widget import PGERootWidget
 
 
 class Display(object):
@@ -18,8 +17,6 @@ class Display(object):
         self._register_default_callbacks()
 
         if self._main_widget:
-            if not isinstance(self._main_widget, PGERootWidget):
-                raise TypeError('Main widget must be an instance of PGERootWidget')
 
             self._main_widget.surface = self.surface.subsurface(self._main_widget.rect)
 
@@ -29,9 +26,6 @@ class Display(object):
 
     @main_widget.setter
     def main_widget(self, new_widget):
-        if not isinstance(new_widget, PGERootWidget):
-            raise TypeError('Main widget must be an instance of PGERootWidget')
-
         self._main_widget = new_widget
         self._main_widget.surface = self.surface.subsurface(self._main_widget.rect)
 

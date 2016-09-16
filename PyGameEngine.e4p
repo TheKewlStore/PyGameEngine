@@ -15,22 +15,32 @@
   <Sources>
     <Source>pygame_engine/core/engine.py</Source>
     <Source>pygame_engine/core/__init__.py</Source>
-    <Source>pygame_engine/lib/__init__.py</Source>
     <Source>pygame_engine/__init__.py</Source>
     <Source>__init__.py</Source>
-    <Source>pygame_engine/lib/event/signal.py</Source>
-    <Source>pygame_engine/lib/event/slot.py</Source>
-    <Source>pygame_engine/lib/event/__init__.py</Source>
     <Source>pygame_engine/core/environment.py</Source>
-    <Source>pygame_engine/lib/config.py</Source>
-    <Source>pygame_engine/lib/logging_config.py</Source>
+    <Source>pygame_engine/core/display.py</Source>
+    <Source>tests/test_engine.py</Source>
+    <Source>pygame_engine/config/config.py</Source>
+    <Source>pygame_engine/config/logging_config.py</Source>
+    <Source>pygame_engine/config/__init__.py</Source>
+    <Source>pygame_engine/data/color.py</Source>
+    <Source>pygame_engine/data/point.py</Source>
+    <Source>pygame_engine/data/size.py</Source>
+    <Source>pygame_engine/data/__init__.py</Source>
+    <Source>pygame_engine/event/signal.py</Source>
+    <Source>pygame_engine/event/slot.py</Source>
+    <Source>pygame_engine/event/__init__.py</Source>
+    <Source>pygame_engine/gui/label.py</Source>
+    <Source>pygame_engine/gui/layout.py</Source>
+    <Source>pygame_engine/gui/widget.py</Source>
+    <Source>pygame_engine/gui/__init__.py</Source>
   </Sources>
   <Forms/>
   <Translations/>
   <Resources/>
   <Interfaces/>
   <Others/>
-  <MainScript>pygame_engine/core/engine.py</MainScript>
+  <MainScript>tests/test_engine.py</MainScript>
   <Vcs>
     <VcsType>None</VcsType>
   </Vcs>

@@ -10,6 +10,7 @@ configuration = EngineConfiguration()
 def setup():
     setup_core()
     setup_event()
+    setup_gui()
 
 
 def setup_core():
@@ -18,6 +19,11 @@ def setup_core():
 
 def setup_event():
     initialize_logger_from_config('root.event')
+
+
+def setup_gui():
+    initialize_logger_from_config('root.gui')
+    initialize_logger_from_config('root.gui.layout')
 
 
 def initialize_logger_from_config(logger_name):

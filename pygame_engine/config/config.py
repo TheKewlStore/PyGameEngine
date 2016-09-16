@@ -37,6 +37,8 @@ class EngineConfiguration(Configuration):
         default_sections = OrderedDictionary()
         default_sections['root.core.engine.logger'] = logging_default_section('root.core.engine')
         default_sections['root.event.logger'] = logging_default_section('root.event')
+        default_sections['root.gui.logger'] = logging_default_section('root.gui')
+        default_sections['root.gui.layout.logger'] = logging_default_section('root.gui.layout')
 
         file_path = os_util.make_path(environment.project_root(), 'engine.ini')
 
